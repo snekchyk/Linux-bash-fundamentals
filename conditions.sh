@@ -1,6 +1,9 @@
 #!/bin/bash
 
 #Cases
+#Cases uses for different varients of one variable
+#Sometimes it could be very useful
+
 
 echo "What is your dream? 1 - Fly to the moon, 2 - See Titanic, 3 - Buld a rocket"
 

@@ -1,5 +1,25 @@
 #!/bin/bash
 
+#Cases
+
+echo "What is your dream? 1 - Fly to the moon, 2 - See Titanic, 3 - Buld a rocket"
+
+read dream
+
+case $dream in
+	1)
+		echo "You'll fall)"
+		;;
+	2)
+		echo "You'll choke)"
+		;;
+	3)
+		echo "You'll fail)"
+		;;
+		
+esac
+
+
 name=$1
 random=$(( $RANDOM % 2 ))
 
@@ -39,4 +59,13 @@ if [[ $name == "Snekchyk" && $USER == "root" ]]; then
     echo "Come in"
 else
     echo "Good bye"
+fi
+
+if [[ $USER == "snekchyk" || $USER == "root" ]]; then
+	echo "Hello my boss"
+elif [[ $name == "hacker" ]]; then
+	echo "Fsociety"
+else
+	echo "Go away"
+
 fi
